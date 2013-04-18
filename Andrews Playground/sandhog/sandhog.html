@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>Sandhog</title>
+<link rel="apple-touch-icon" href="touch-icon-57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-144.png" />
+<link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/mainPage.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.js"></script>
+<script type="text/javascript" src="js/sandhog.js"></script>
+<script type="text/javascript" src="js/control_logic.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="a" data-title="Sandhog" id="main" class="mainPage">
+	<h1>Sandhog</h1>
+	<div data-role="content">
+        <form>
+        	<div class="ui-grid-d">
+            	<!-- blue trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllBlue" href="#" class="selectAll allBlue" data-color="blue">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="A" href="#" class="blue train aTrain" data-train="a">A<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="C" href="#" class="blue train cTrain" data-train="c">C<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="E" href="#" class="blue train eTrain" data-train="e">E<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"></div>
+            	<!-- red trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllRed" href="#" class="selectAll allRed" data-color="red">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="One" href="#" class="red train oneTrain" data-train="1">1<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="Two" href="#" class="red train twoTrain" data-train="2">2<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="Three" href="#" class="red train threeTrain" data-train="3">3<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"></div>
+            	<!-- green trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllGreen" href="#" class="selectAll allGreen" data-color="green">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="Four" href="#" class="green train fourTrain" data-train="4">4<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="Five" href="#" class="green train fiveTrain" data-train="5">5<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="Six" href="#" class="green train sixTrain" data-train="6">6<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"></div>
+            	<!-- orange trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllOrange" href="#" class="selectAll allOrange" data-color="orange">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="B" href="#" class="orange train bTrain" data-train="b">B<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="D" href="#" class="orange train dTrain" data-train="d">D<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="F" href="#" class="orange train fTrain" data-train="f">F<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"><a id="button" name ="M" href="#" class="orange train mTrain" data-train="m">M<span class="checkIcon"></span></a></div>
+            	<!-- yellow trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllYellow" href="#" class="selectAll allYellow" data-color="yellow">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="N" href="#" class="yellow train nTrain" data-train="n">N<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="Q" href="#" class="yellow train qTrain" data-train="q">Q<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="R" href="#" class="yellow train rTrain" data-train="r">R<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"></div>
+            	<!-- brown trains -->
+            	<div class="ui-block-a"><a id="button" name ="AllBrown" href="#" class="selectAll allBrown" data-color="brown">Select All<span class="checkIcon"></span></a></div>
+                <div class="ui-block-b"><a id="button" name ="J" href="#" class="brown train jTrain" data-train="j">J<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="Z" href="#" class="brown train zTrain" data-train="z">Z<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"></div>
+                <div class="ui-block-e"></div>
+            	<!-- misc trains -->
+            	<div class="ui-block-a"></div>
+                <div class="ui-block-b"><a id="button" name ="G" href="#" class="train gTrain" data-train="g">G<span class="checkIcon"></span></a></div>
+                <div class="ui-block-c"><a id="button" name ="L" href="#" class="train lTrain" data-train="l">L<span class="checkIcon"></span></a></div>
+                <div class="ui-block-d"><a id="button" name ="Seven" href="#" class="train sevenTrain" data-train="7">7<span class="checkIcon"></span></a></div>
+                <div class="ui-block-e"><a id="button" name ="S" href="#" class="train sTrain" data-train="s">S<span class="checkIcon"></span></a></div>
+            </div>
+            <a href="#results" data-role="button">Dig Deeper</a>
+        </form>
+    </div>
+</div>
+<!-- ======= This will be the results page. ======= -->
+<div data-role="page" data-theme="a" data-title="Display Results" id="results">
+	<div data-role="header" data-theme="a">
+    	<a href="#menu" data-shadow="false" data-iconshadow="false" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a>
+        <h1>Results</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    	<p>Content goes here</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+.mainPage h1 {
+	font-family:akzidenzGrotesk;
+	text-align:center;
+}
+
+.mainPage .ui-content .ui-grid-d {
+	margin-bottom:36px;
+}
+
+.checkIcon {
+	display:hidden;
+	float:right;
+	width:18px;
+	height:18px;
+	background-image:url(../img/icons-18-white.png);
+	background-position:-252px -1px;
+}
+
+@media all and (max-width:480px) {	
+	.checkIcon {
+		margin:-2px -4px 0 0;
+	}
+					
+	.mainPage h1 {
+		font-size:2em;
+		margin: 0.5em auto 0.1em auto;
+	}
+	
+	.mainPage .ui-content {
+		max-width:320px;
+		margin: 0 auto;
+	}
+		.mainPage .ui-content .ui-grid-d {
+			width:100%;
+		}
+
+			.mainPage .ui-content .ui-grid-d a {
+				display:block;
+				width:36px;
+				height:36px;
+				margin:4px;
+				text-indent:100%;
+				white-space:nowrap;
+				overflow:hidden;
+				background-image:url(../img/icons-subway-36.png);
+			}
+			
+				.mainPage .ui-content .ui-grid-d a.selected {
+					background-image:url(../img/icons-subway-selected-36.png);
+				}
+		
+				.mainPage .ui-content .ui-grid-d a.selectAll {
+					width:30px;
+					height:30px;
+					margin:7px;
+				}
+			
+				.mainPage .ui-content .ui-grid-d a.oneTrain:link { background-position:0 0; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:focus { background-position:0 -36px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:hover { background-position:0 -36px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:active { background-position:0 -36px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:visited { background-position:0 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.twoTrain:link { background-position:-36px 0; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:focus { background-position:-36px -36px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:hover { background-position:-36px -36px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:active { background-position:-36px -36px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:visited { background-position:-36px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.threeTrain:link { background-position:-72px 0; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:focus { background-position:-72px -36px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:hover { background-position:-72px -36px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:active { background-position:-72px -36px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:visited { background-position:-72px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fourTrain:link { background-position:-108px 0; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:focus { background-position:-108px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:hover { background-position:-108px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:active { background-position:-108px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:visited { background-position:-108px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:link { background-position:-144px 0; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:focus { background-position:-144px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:hover { background-position:-144px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:active { background-position:-144px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:visited { background-position:-144px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sixTrain:link { background-position:-180px 0; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:focus { background-position:-180px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:hover { background-position:-180px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:active { background-position:-180px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:visited { background-position:-180px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:link { background-position:-216px 0; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:focus { background-position:-216px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:hover { background-position:-216px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:active { background-position:-216px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:visited { background-position:-216px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.aTrain:link { background-position:-252px 0; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:focus { background-position:-252px -36px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:hover { background-position:-252px -36px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:active { background-position:-252px -36px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:visited { background-position:-252px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.cTrain:link { background-position:-288px 0; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:focus { background-position:-288px -36px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:hover { background-position:-288px -36px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:active { background-position:-288px -36px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:visited { background-position:-288px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.eTrain:link { background-position:-324px 0; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:focus { background-position:-324px -36px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:hover { background-position:-324px -36px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:active { background-position:-324px -36px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:visited { background-position:-324px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.bTrain:link { background-position:-360px 0; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:focus { background-position:-360px -36px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:hover { background-position:-360px -36px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:active { background-position:-360px -36px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:visited { background-position:-360px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.dTrain:link { background-position:-396px 0; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:focus { background-position:-396px -36px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:hover { background-position:-396px -36px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:active { background-position:-396px -36px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:visited { background-position:-396px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fTrain:link { background-position:-432px 0; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:focus { background-position:-432px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:hover { background-position:-432px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:active { background-position:-432px -36px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:visited { background-position:-432px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.mTrain:link { background-position:-468px 0; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:focus { background-position:-468px -36px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:hover { background-position:-468px -36px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:active { background-position:-468px -36px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:visited { background-position:-468px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.gTrain:link { background-position:-504px 0; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:focus { background-position:-504px -36px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:hover { background-position:-504px -36px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:active { background-position:-504px -36px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:visited { background-position:-504px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.nTrain:link { background-position:-540px 0; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:focus { background-position:-540px -36px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:hover { background-position:-540px -36px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:active { background-position:-540px -36px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:visited { background-position:-540px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.qTrain:link { background-position:-576px 0; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:focus { background-position:-576px -36px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:hover { background-position:-576px -36px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:active { background-position:-576px -36px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:visited { background-position:-576px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.rTrain:link { background-position:-612px 0; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:focus { background-position:-612px -36px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:hover { background-position:-612px -36px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:active { background-position:-612px -36px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:visited { background-position:-612px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.jTrain:link { background-position:-648px 0; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:focus { background-position:-648px -36px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:hover { background-position:-648px -36px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:active { background-position:-648px -36px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:visited { background-position:-648px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.zTrain:link { background-position:-684px 0; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:focus { background-position:-684px -36px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:hover { background-position:-684px -36px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:active { background-position:-684px -36px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:visited { background-position:-684px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.lTrain:link { background-position:-720px 0; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:focus { background-position:-720px -36px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:hover { background-position:-720px -36px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:active { background-position:-720px -36px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:visited { background-position:-720px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sTrain:link { background-position:-756px 0; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:focus { background-position:-756px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:hover { background-position:-756px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:active { background-position:-756px -36px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:visited { background-position:-756px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allRed:link { background-position:-792px 0; }
+				.mainPage .ui-content .ui-grid-d a.allRed:focus { background-position:-792px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:hover { background-position:-792px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:active { background-position:-792px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:visited { background-position:-792px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allGreen:link { background-position:-828px 0; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:focus { background-position:-828px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:hover { background-position:-828px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:active { background-position:-828px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:visited { background-position:-828px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allBlue:link { background-position:-864px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:focus { background-position:-864px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:hover { background-position:-864px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:active { background-position:-864px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:visited { background-position:-864px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allOrange:link { background-position:-900px 0; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:focus { background-position:-900px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:hover { background-position:-900px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:active { background-position:-900px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:visited { background-position:-900px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allYellow:link { background-position:-936px 0; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:focus { background-position:-936px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:hover { background-position:-936px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:active { background-position:-936px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:visited { background-position:-936px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allBrown:link { background-position:-972px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:focus { background-position:-972px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:hover { background-position:-972px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:active { background-position:-972px -36px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:visited { background-position:-972px 0; }
+}
+
+@media all and (min-width:481px) { /* and (max-width:1024px) */
+	.checkIcon {
+		margin:14px -3px 0 0;
+	}
+
+	.mainPage h1 {
+		font-size: 5em;
+		width:100%;
+		text-align:center;
+		margin:2% auto 0 auto;
+	}
+	
+	.mainPage .ui-content {
+		max-width:480px;
+		margin: 0 auto;
+	}
+	
+		.mainPage .ui-content .ui-grid-d a {
+			display:block;
+			width:54px;
+			height:54px;
+			margin:4px;
+			text-indent:100%;
+			white-space:nowrap;
+			overflow:hidden;
+			background-image:url(../img/icons-subway-54.png)
+		}
+		
+			.mainPage .ui-content .ui-grid-d a.selected {
+				background-image:url(../img/icons-subway-selected-54.png);
+			}
+		
+			.mainPage .ui-content .ui-grid-d a.selectAll {
+				width:45px;
+				height:45px;
+				margin:8px 8px 9px 9px;
+			}
+		
+				.mainPage .ui-content .ui-grid-d a.oneTrain:link { background-position:0 0; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:focus { background-position:0 -54px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:hover { background-position:0 -54px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:active { background-position:0 -54px; }
+				.mainPage .ui-content .ui-grid-d a.oneTrain:visited { background-position:0 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.twoTrain:link { background-position:-54px 0; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:focus { background-position:-54px -54px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:hover { background-position:-54px -54px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:active { background-position:-54px -54px; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain:visited { background-position:-54px 0; }
+								
+				.mainPage .ui-content .ui-grid-d a.threeTrain:link { background-position:-108px 0; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:focus { background-position:-108px -54px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:hover { background-position:-108px -54px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:active { background-position:-108px -54px; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain:visited { background-position:-108px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fourTrain:link { background-position:-162px 0; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:focus { background-position:-162px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:hover { background-position:-162px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:active { background-position:-162px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain:visited { background-position:-162px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:link { background-position:-216px 0; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:focus { background-position:-216px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:hover { background-position:-216px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:active { background-position:-216px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain:visited { background-position:-216px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sixTrain:link { background-position:-270px 0; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:focus { background-position:-270px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:hover { background-position:-270px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:active { background-position:-270px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain:visited { background-position:-270px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:link { background-position:-324px 0; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:focus { background-position:-324px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:hover { background-position:-324px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:active { background-position:-324px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain:visited { background-position:-324px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.aTrain:link { background-position:-378px 0; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:focus { background-position:-378px -54px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:hover { background-position:-378px -54px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:active { background-position:-378px -54px; }
+				.mainPage .ui-content .ui-grid-d a.aTrain:visited { background-position:-378px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.cTrain:link { background-position:-432px 0; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:focus { background-position:-432px -54px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:hover { background-position:-432px -54px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:active { background-position:-432px -54px; }
+				.mainPage .ui-content .ui-grid-d a.cTrain:visited { background-position:-432px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.eTrain:link { background-position:-486px 0; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:focus { background-position:-486px -54px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:hover { background-position:-486px -54px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:active { background-position:-486px -54px; }
+				.mainPage .ui-content .ui-grid-d a.eTrain:visited { background-position:-486px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.bTrain:link { background-position:-540px 0; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:focus { background-position:-540px -54px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:hover { background-position:-540px -54px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:active { background-position:-540px -54px; }
+				.mainPage .ui-content .ui-grid-d a.bTrain:visited { background-position:-540px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.dTrain:link { background-position:-594px 0; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:focus { background-position:-594px -54px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:hover { background-position:-594px -54px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:active { background-position:-594px -54px; }
+				.mainPage .ui-content .ui-grid-d a.dTrain:visited { background-position:-594px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.fTrain:link { background-position:-648px 0; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:focus { background-position:-648px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:hover { background-position:-648px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:active { background-position:-648px -54px; }
+				.mainPage .ui-content .ui-grid-d a.fTrain:visited { background-position:-648px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.mTrain:link { background-position:-702px 0; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:focus { background-position:-702px -54px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:hover { background-position:-702px -54px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:active { background-position:-702px -54px; }
+				.mainPage .ui-content .ui-grid-d a.mTrain:visited { background-position:-702px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.gTrain:link { background-position:-756px 0; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:focus { background-position:-756px -54px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:hover { background-position:-756px -54px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:active { background-position:-756px -54px; }
+				.mainPage .ui-content .ui-grid-d a.gTrain:visited { background-position:-756px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.nTrain:link { background-position:-810px 0; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:focus { background-position:-810px -54px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:hover { background-position:-810px -54px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:active { background-position:-810px -54px; }
+				.mainPage .ui-content .ui-grid-d a.nTrain:visited { background-position:-810px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.qTrain:link { background-position:-864px 0; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:focus { background-position:-864px -54px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:hover { background-position:-864px -54px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:active { background-position:-864px -54px; }
+				.mainPage .ui-content .ui-grid-d a.qTrain:visited { background-position:-864px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.rTrain:link { background-position:-918px 0; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:focus { background-position:-918px -54px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:hover { background-position:-918px -54px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:active { background-position:-918px -54px; }
+				.mainPage .ui-content .ui-grid-d a.rTrain:visited { background-position:-918px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.jTrain:link { background-position:-972px 0; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:focus { background-position:-972px -54px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:hover { background-position:-972px -54px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:active { background-position:-972px -54px; }
+				.mainPage .ui-content .ui-grid-d a.jTrain:visited { background-position:-972px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.zTrain:link { background-position:-1026px 0; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:focus { background-position:-1026px -54px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:hover { background-position:-1026px -54px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:active { background-position:-1026px -54px; }
+				.mainPage .ui-content .ui-grid-d a.zTrain:visited { background-position:-1026px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.lTrain:link { background-position:-1080px 0; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:focus { background-position:-1080px -54px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:hover { background-position:-1080px -54px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:active { background-position:-1080px -54px; }
+				.mainPage .ui-content .ui-grid-d a.lTrain:visited { background-position:-1080px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.sTrain:link { background-position:-1134px 0; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:focus { background-position:-1134px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:hover { background-position:-1134px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:active { background-position:-1134px -54px; }
+				.mainPage .ui-content .ui-grid-d a.sTrain:visited { background-position:-1134px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allRed:link { background-position:-1188px 0; }
+				.mainPage .ui-content .ui-grid-d a.allRed:focus { background-position:-1188px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:hover { background-position:-1188px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:active { background-position:-1188px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allRed:visited { background-position:-1188px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allGreen:link { background-position:-1242px 0; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:focus { background-position:-1242px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:hover { background-position:-1242px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:active { background-position:-1242px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allGreen:visited { background-position:-1242px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allBlue:link { background-position:-1296px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:focus { background-position:-1296px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:hover { background-position:-1296px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:active { background-position:-1296px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBlue:visited { background-position:-1296px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allOrange:link { background-position:-1350px 0; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:focus { background-position:-1350px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:hover { background-position:-1350px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:active { background-position:-1350px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allOrange:visited { background-position:-1350px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allYellow:link { background-position:-1404px 0; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:focus { background-position:-1404px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:hover { background-position:-1404px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:active { background-position:-1404px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allYellow:visited { background-position:-1404px 0; }
+				
+				.mainPage .ui-content .ui-grid-d a.allBrown:link { background-position:-1458px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:focus { background-position:-1458px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:hover { background-position:-1458px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:active { background-position:-1458px -54px; }
+				.mainPage .ui-content .ui-grid-d a.allBrown:visited { background-position:-1458px 0; }
+}
+
+/*
+@media and (min-width:1024px) {
+	.mainPage h1 {
+		font-size: 5em;
+		width:100%;
+		text-align:center;
+		margin:2% auto 0 auto;
+	}
+	
+	.mainPage .ui-content {
+		max-width:520px;
+		margin: 0 auto;
+	}
+	
+		.mainPage .ui-content .ui-grid-d a {
+			display:block;
+			width:64px;
+			height:64px;
+			margin:4px;
+			text-indent:100%;
+			white-space:nowrap;
+			overflow:hidden;
+			background-image:url(../img/icons-subway-64.png)
+		}
+		
+				.mainPage .ui-content .ui-grid-d a.oneTrain { background-position:0 0; }
+				.mainPage .ui-content .ui-grid-d a.twoTrain { background-position:-64px 0; }
+				.mainPage .ui-content .ui-grid-d a.threeTrain { background-position:-128px 0; }
+				.mainPage .ui-content .ui-grid-d a.fourTrain { background-position:-192px 0; }
+				.mainPage .ui-content .ui-grid-d a.fiveTrain { background-position:-256px 0; }
+				.mainPage .ui-content .ui-grid-d a.sixTrain { background-position:-320px 0; }
+				.mainPage .ui-content .ui-grid-d a.sevenTrain { background-position:-384px 0; }
+				.mainPage .ui-content .ui-grid-d a.aTrain { background-position:-448px 0; }
+				.mainPage .ui-content .ui-grid-d a.cTrain { background-position:-512px 0; }
+				.mainPage .ui-content .ui-grid-d a.eTrain { background-position:-576px 0; }
+				.mainPage .ui-content .ui-grid-d a.bTrain { background-position:-640px 0; }
+				.mainPage .ui-content .ui-grid-d a.dTrain { background-position:-704px 0; }
+				.mainPage .ui-content .ui-grid-d a.fTrain { background-position:-768px 0; }
+				.mainPage .ui-content .ui-grid-d a.mTrain { background-position:-832px 0; }
+				.mainPage .ui-content .ui-grid-d a.gTrain { background-position:-896px 0; }
+				.mainPage .ui-content .ui-grid-d a.nTrain { background-position:-960px 0; }
+				.mainPage .ui-content .ui-grid-d a.qTrain { background-position:-1024px 0; }
+				.mainPage .ui-content .ui-grid-d a.rTrain { background-position:-1088px 0; }
+				.mainPage .ui-content .ui-grid-d a.jTrain { background-position:-1152px 0; }
+				.mainPage .ui-content .ui-grid-d a.zTrain { background-position:-1216px 0; }
+				.mainPage .ui-content .ui-grid-d a.lTrain { background-position:-1280px 0; }
+				.mainPage .ui-content .ui-grid-d a.sTrain { background-position:-1408px 0; }
+				.mainPage .ui-content .ui-grid-d a.allRed { background-position:-1472px 0; }
+				.mainPage .ui-content .ui-grid-d a.allGreen { background-position:-1536px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBlue { background-position:-1600px 0; }
+				.mainPage .ui-content .ui-grid-d a.allOrange { background-position:-1664px 0; }
+				.mainPage .ui-content .ui-grid-d a.allYellow { background-position:-1728px 0; }
+				.mainPage .ui-content .ui-grid-d a.allBrown { background-position:-1792px 0; }
+	
+}	*/
